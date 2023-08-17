@@ -15,6 +15,8 @@ while True:
 
     for ev in event.get():
         if ev.type == QUIT:sys.exit()
+        if ev.type == KEYDOWN:
+            image.save(screen, "ss.png")
     
     display.update()
     clock = time.Clock()
